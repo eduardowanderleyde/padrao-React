@@ -1,21 +1,12 @@
 import React from "react";
-import cafe from "./components/img/eu.png";
+import Header from "./components/Header";
+import Corpo from "./components/Corpo";
 
 export default function App() {
-  const canal = () => {
-    return "CFB Cursos";
-  };
-  function curso() {
-    return "Curso de React";
-  }
-
   return (
-    <section>
-      <p>{"Canal:" + canal()}</p>
-
-      <p>{curso()}</p>
-
-      <img src={cafe} />
-    </section>
+    <>
+      <Header />
+      <Corpo />
+    </>
   );
 }
